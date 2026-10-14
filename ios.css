@@ -1,0 +1,59 @@
+/* WeBia 3 · iPhone-first interface · no visual framework */
+:root{color-scheme:light;--bg:#f5f6fa;--surface:#fff;--surface2:#f3f5f8;--stroke:#e8ebf1;--text:#161b28;--sub:#747e8f;--accent:#157d69;--safe-bottom:env(safe-area-inset-bottom,0px)}
+html{overflow-x:hidden;scrollbar-gutter:auto;background:#f5f6fa}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",system-ui,sans-serif;font-size:16px;letter-spacing:-.2px;line-height:1.42}
+main{max-width:660px;padding:calc(26px + env(safe-area-inset-top,0px)) 18px calc(116px + var(--safe-bottom));overflow-x:hidden}
+header{align-items:center;margin:0 0 25px}
+.eyebrow{font-size:10px;letter-spacing:1.8px;color:#8992a0;font-weight:800;margin-bottom:3px}
+h1{font-size:38px;letter-spacing:-2.1px;font-weight:830;color:#182132}
+.brand{color:#178c74}.header-dot{color:#f3b75d}
+header small{font-size:14px;margin-top:2px;color:#7e8897}
+#logout{background:#e9ecf2;color:#566073;font-size:13px;min-height:39px;border-radius:14px;padding:9px 14px}
+.card{background:#fff;border:1px solid #edf0f4;border-radius:22px;box-shadow:0 3px 16px rgba(30,45,70,.035);padding:20px;margin-bottom:14px}
+h2{font-size:19px;letter-spacing:-.5px;color:#222a3a;margin:0 0 15px}
+small,.muted{color:#798496;font-size:14px}
+.month-control{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 1px 14px}
+.month-control>span{font-size:23px;line-height:1.2;font-weight:780;letter-spacing:-.8px;color:#192131}
+.month-control input{background:#fff;border:1px solid #e7eaf0;border-radius:12px;min-height:40px;width:auto;max-width:56%;font-size:14px!important;font-weight:650;color:#2d3848;padding:8px 9px;color-scheme:light}
+.balance-card{background:#162b40;border-radius:25px;color:#fff;padding:23px 23px 25px;min-height:190px;box-shadow:0 10px 22px rgba(19,44,65,.1);margin-bottom:13px}
+.balance-top{display:flex;align-items:center;justify-content:space-between;color:#b8cedc;font-size:15px;font-weight:570}
+.balance-symbol{background:rgba(255,255,255,.1);border-radius:50%;width:34px;height:34px;display:grid;place-items:center;color:#fff;font-size:23px;font-weight:400}
+.balance-card .big{font-size:clamp(37px,10vw,48px);color:#fff;font-weight:780;letter-spacing:-2px;margin:15px 0 5px;line-height:1.15}
+.balance-caption{font-size:13px;color:#a5becd;text-transform:capitalize}
+.summary-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-bottom:18px}
+.summary-grid .card{position:relative;padding:17px 16px 18px;border-radius:20px;min-height:146px;margin:0}
+.summary-icon{height:34px;width:34px;border-radius:12px;display:grid;place-items:center;font-size:23px;font-weight:700;margin-bottom:10px}
+.income-icon{color:#0c9472;background:#e2f6ef}.expense-icon{color:#e3666d;background:#fff0ef}
+.summary-grid small{font-size:14px;font-weight:600;color:#677486}
+.summary-grid .value{font-size:clamp(20px,5.6vw,28px);font-weight:780;letter-spacing:-.9px;margin-top:5px}
+.green{color:#12846b}.red{color:#d9656e}
+.insight-card,.pending-card{margin-top:0}.insight-card h2,.pending-card h2{font-size:18px}
+.line{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:12px;padding:15px 0;border-bottom:1px solid #edf0f4;color:#303b4a;font-size:15px}
+.line>div,.line>span{min-width:0}.line>div:last-child{text-align:right}.line strong{font-weight:750;font-size:16px}
+.line small{font-size:13px}
+.insight-card .line{align-items:center}.insight-card .note{margin:12px 0 0;font-size:13px;color:#7b8796;line-height:1.5}
+#upcoming>.muted,#entryList>.muted,#recList>.muted{font-size:15px;margin:8px 0}
+.tabs{position:fixed;left:0;right:0;bottom:0;transform:none;max-width:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2px;padding:9px max(12px,env(safe-area-inset-right,0px)) calc(9px + var(--safe-bottom)) max(12px,env(safe-area-inset-left,0px));background:rgba(250,251,253,.96);border-top:1px solid #e4e8ee;box-shadow:0 -4px 24px rgba(22,37,58,.045);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);border-radius:0}
+.tabs button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:59px;background:transparent;color:#85909f;border-radius:14px;padding:7px 2px;font-size:11px;font-weight:650;white-space:nowrap}
+.tabs button svg{width:24px;height:24px;flex-shrink:0}
+.tabs button span{font-size:11px;line-height:1.15}
+.tabs button.active{color:#147d69;background:#e8f5f0}
+button{font-size:15px;border-radius:13px;min-height:45px;background:#157d69;color:#fff;font-weight:700}
+button.secondary{background:#eef1f6;color:#2f3a4b}
+button.danger{background:#fff0f0;color:#c4525e}
+input,select{background:#f7f8fa;border:1px solid #e1e6ec;color:#202b3b;border-radius:13px;min-height:50px;font-size:16px!important;appearance:auto;-webkit-appearance:auto;color-scheme:light}
+input:focus-visible,select:focus-visible,button:focus-visible{outline:2px solid #13876f;outline-offset:2px}
+label{color:#5e697b;font-size:14px;font-weight:650;margin:14px 0 7px}
+.note{color:#7a8594;font-size:14px}
+#notice:not(:empty){background:#fff4e5;border-color:#f0ddbd;color:#845b27}
+#auth{margin-top:18px}#auth h2{font-size:23px}#auth p{font-size:15px}
+#familyInfo{font-size:17px;line-height:1.65}
+#familyInfo strong:last-child{display:inline-block;background:#eff7f4;color:#137f68;border-radius:12px;padding:8px 12px;letter-spacing:1px}
+#entryList .line,#recList .line{align-items:flex-start}
+#entryList .line>div:last-child,#recList .line>div:last-child{min-width:95px}
+.actions button{font-size:13px;min-height:37px;padding:8px 10px}
+#entryForm button,#recForm button{width:100%;margin-top:12px}
+@media(max-width:440px){main{padding-left:16px;padding-right:16px}.card{padding:18px}.summary-grid .card{padding:15px 13px}.line{flex-direction:row}.line>div:last-child{text-align:right;width:auto}.line>div:last-child .actions{justify-content:flex-end}.formgrid{grid-template-columns:1fr}.formgrid .full{grid-column:1}.month-control>span{font-size:22px}.month-control input{font-size:13px!important}.tabs button{font-size:11px}}
+@media(min-width:701px){.tabs{left:50%;right:auto;transform:translateX(-50%);width:660px;max-width:660px;border-radius:18px 18px 0 0}}
+@media(prefers-color-scheme:dark){:root{color-scheme:light}}
+@media(prefers-reduced-motion:reduce){button{transition:none!important}}
