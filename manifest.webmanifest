@@ -1,1 +1,20 @@
-{"name":"WeBia — Finanças da Família","short_name":"WeBia","start_url":"./","display":"standalone","background_color":"#0b1525","theme_color":"#101d32","icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}
+{
+  "name": "WeBia — Finanças da Família",
+  "short_name": "WeBia",
+  "start_url": "./?source=homescreen",
+  "display": "standalone",
+  "background_color": "#f6f7fb",
+  "theme_color": "#f6f7fb",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "id": "./",
+  "scope": "./",
+  "description": "As finanças da família Well, Bia e Miguel, juntas.",
+  "lang": "pt-BR"
+}
