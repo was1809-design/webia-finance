@@ -1,0 +1,1 @@
+window.WEBIA_CONFIG={url:'https://zqihszvwmzimxeqmptrj.supabase.co',publishableKey:'sb_publishable_rSEwly08yc9xYLPBWM-0QA_t8yg21W0'};
